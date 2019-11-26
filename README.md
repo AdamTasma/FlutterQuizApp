@@ -1,4 +1,4 @@
-# flutter_maxamilian_1
+# flutter_quiz_app
 
 A new Flutter application.
 
@@ -14,3 +14,15 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+### edit user env variables
+
+add flutter\bin to your PATH variable
+F:\AllFlutterStuff\flutter\bin (contains flutter.bat)
+
+create new variable ANDROID_HOME that points to android sdk (contains platforms, platforms-tools)
+F:\AllFlutterStuff\Android\AndroidSDK
+
+add two more PATH variables
+%ANDROID_HOME%\tools
+%ANDROID_HOME%\platform-tools
