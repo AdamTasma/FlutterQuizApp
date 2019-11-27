@@ -20,28 +20,28 @@ class _MyAppState extends State<MyApp> {
       // could also use Map(). its a key/value pair. "{}" is the shortcut way of writing Map()
       'questionText': 'What\'s your favorite color?',
       'answers': [
-        {'text': 'blue', 'score': '1'},
-        {'text': 'black', 'score': '2'},
-        {'text': 'red', 'score': '3'},
-        {'text': 'translucent', 'score': '4'},
+        {'text': 'blue', 'score': 1},
+        {'text': 'black', 'score': 2},
+        {'text': 'red', 'score': 3},
+        {'text': 'translucent', 'score': 4},
       ],
     },
     {
       'questionText': "What\'s your favorite animal?",
       'answers': [
-        {'text': 'zebra', 'score': '1'},
-        {'text': 'flying squirrel', 'score': '2'},
-        {'text': 'lioness', 'score': '3'},
-        {'text': 'Butcher when not using his keyboard shortcuts', 'score': '4'},
+        {'text': 'zebra', 'score': 1},
+        {'text': 'flying squirrel', 'score': 2},
+        {'text': 'lioness', 'score': 3},
+        {'text': 'Butcher when not using his keyboard shortcuts', 'score': 4},
       ],
     },
     {
       'questionText': 'Who\'s the best wife?',
       'answers': [
-        {'text': 'Aubrey', 'score': '1'},
-        {'text': 'Aubrey', 'score': '2'},
-        {'text': 'Aubrey', 'score': '3'},
-        {'text': 'Aubrey', 'score': '4'},
+        {'text': 'Aubrey', 'score': 1},
+        {'text': 'Aubrey', 'score': 1},
+        {'text': 'Aubrey', 'score': 1},
+        {'text': 'Aubrey', 'score': 1},
       ],
     }
   ];
@@ -71,7 +71,7 @@ class _MyAppState extends State<MyApp> {
                 questionIndex: _questionIndex,
                 questions: _questions,
               )
-            : Result(),
+            : Result(_totalScore),
       ),
     );
   }
